@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#fff8e1;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#d62828,#fcbf49,#2a9d8f);
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+.logo{
+    width:100px;
+    margin-bottom:10px;
+}
+
+header h1{
+    font-size:36px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+/* Navbar */
+nav{
+    background:#2a9d8f;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:black;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:red;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:#fcbf49;
+    color:#222;
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* Section */
+.section{
+    padding:50px 20px;
+}
+
+.section h2{
+    text-align:center;
+    color:#d62828;
+    margin-bottom:30px;
+}
+
+/* Produk */
+.card-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    margin:15px 0;
+    color:#2a9d8f;
+}
+
+.card p{
+    padding:0 15px 20px;
+    text-align:center;
+}
+
+/* Kelompok */
+.group-photo{
+    display:block;
+    width:70%;
+    max-width:700px;
+    margin:auto;
+    border-radius:15px;
+}
+
+.anggota{
+    text-align:center;
+    margin-top:20px;
+}
+
+.anggota ul{
+    list-style:none;
+}
+
+.anggota li{
+    margin:8px 0;
+}
+
+/* Dokumentasi */
+.gallery{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.gallery img{
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer{
+    background:#d62828;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .hero h2{
+        font-size:30px;
+    }
+
+    .group-photo{
+        width:95%;
+    }
+
+    .card{
+        width:90%;
+    }
+}
